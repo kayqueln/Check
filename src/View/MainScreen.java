@@ -37,6 +37,8 @@ public class MainScreen extends javax.swing.JFrame {
         initDataController();
         initComponentsModel();
         decoreteTableTasks(); 
+        
+        this.setIconImage(new javax.swing.ImageIcon("C:\\Users\\Administrador\\Documents\\NetBeansProjects\\Check\\src\\View\\check-icon.png").getImage());
     }
 
     /**

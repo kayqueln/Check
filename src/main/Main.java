@@ -9,6 +9,7 @@ import Controller.TaskController;
 import Model.Project;
 import Model.Task;
 import Util.ConnectionFactory;
+import View.MainScreen;
 import java.sql.Connection;
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
@@ -21,13 +22,10 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Calendar calendar = Calendar.getInstance();
+        MainScreen mainScreen = new MainScreen();
         
-        ProjectController projectController = new ProjectController();
-        Project project = new Project();
+        mainScreen.setVisible(true);
         
-        TaskController taskController = new TaskController();        
-        Task task = new Task();
         
         
         //INSERT NA TABELA PROJETOS
